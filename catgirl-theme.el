@@ -219,25 +219,26 @@
    `(markdown-header-face-3                 ((t (:inherit 'markdown-header-face :foreground ,catgirl-orange :height 1.5))))
    `(markdown-header-face-4                 ((t (:inherit 'markdown-header-face :foreground ,catgirl-teal :height 1.3))))
 
-  ;; neotree
-  `(neo-banner-face                         ((t (:foreground ,catgirl-teal :weight bold))))
-  `(neo-header-face                         ((t (:foreground ,catgirl-purple))))
-  `(neo-root-dir-face                       ((t (:foreground ,catgirl-teal :weight bold))))
-  `(neo-dir-link-face                       ((t (:foreground ,catgirl-pink))))
-  `(neo-file-link-face                      ((t (:foreground ,catgirl-black))))
-  `(neo-expand-btn-face                     ((t (:foreground ,catgirl-purple))))
+   ;; neotree
+   `(neo-banner-face                        ((t (:foreground ,catgirl-teal :weight bold))))
+   `(neo-header-face                        ((t (:foreground ,catgirl-purple))))
+   `(neo-root-dir-face                      ((t (:foreground ,catgirl-teal :weight bold))))
+   `(neo-dir-link-face                      ((t (:foreground ,catgirl-pink))))
+   `(neo-file-link-face                     ((t (:foreground ,catgirl-black))))
+   `(neo-expand-btn-face                    ((t (:foreground ,catgirl-purple))))
 
-  ;; git gitter
-  `(git-gutter:modified                     ((t (:foreground ,catgirl-attention))))
-  `(git-gutter:deleted                      ((t (:foreground ,catgirl-red))))
-  `(git-gutter:added                        ((t (:foreground ,catgirl-green))))
-  `(git-gutter:seperator                    ((t (:inherit font-lock-comment-face))))
+   ;; git gitter
+   `(git-gutter:modified                    ((t (:foreground ,catgirl-attention))))
+   `(git-gutter:deleted                     ((t (:foreground ,catgirl-red))))
+   `(git-gutter:added                       ((t (:foreground ,catgirl-green))))
+   `(git-gutter:seperator                   ((t (:inherit font-lock-comment-face))))
 
-  ;; eglot
-  `(eglot-diagnostic-tag-unnecessary-face   ((t (:foreground ,catgirl-comment-grey))))
+   ;; eglot
+   `(eglot-diagnostic-tag-unnecessary-face  ((t (:foreground ,catgirl-comment-grey))))
+   `(eglot-inlay-hint-face                  ((t (:foreground ,catgirl-pink-light :background ,catgirl-grey))))
 
-  ;; tabline and tabbar
-  `(tab-bar                                 ((t (
+   ;; tabline and tabbar
+   `(tab-bar                                ((t (
                                                  :foreground ,catgirl-abswhite
                                                  :distant-foreground ,catgirl-abswhite
                                                  :background ,catgirl-grey-dark
@@ -247,8 +248,8 @@
                                                  ;;       :color ,catgirl-grey-dark
                                                  ;;       :style nil
                                                  ;; )
-                                            ))))
-  `(tab-bar-tab                             ((t (
+                                                 ))))
+   `(tab-bar-tab                            ((t (
                                                  :inherit 'tab-bar
                                                  :foreground ,catgirl-abswhite
                                                  :background ,catgirl-purple-light
@@ -256,9 +257,9 @@
                                                        :line-width 4
                                                        :color ,catgirl-purple-light
                                                        :style nil
-                                                 )
-                                            ))))
-  `(tab-bar-tab-inactive                    ((t (
+                                                       )
+                                                 ))))
+   `(tab-bar-tab-inactive                   ((t (
                                                  :inherit 'tab-bar
                                                  :foreground ,catgirl-abswhite
                                                  :background ,catgirl-purple-dull
@@ -266,14 +267,14 @@
                                                        :line-width 4
                                                        :color ,catgirl-purple-dull
                                                        :style nil
-                                                 )
-                                            ))))
-  `(tab-line                                ((t (:inherit 'tab-bar))))
-  `(tab-line-tab                            ((t (:inherit 'tab-bar-tab))))
-  `(tab-line-tab-current                    ((t (:inherit 'tab-bar-tab))))
-  `(tab-line-tab-inactive                   ((t (:inherit 'tab-bar-tab-inactive))))
-  `(tab-line-highlight                      ((t (:inherit 'tab-line-tab-current))))
-  `(tab-line-tab-modified                   ((t (:weight bold))))
+                                                       )
+                                                 ))))
+   `(tab-line                               ((t (:inherit 'tab-bar))))
+   `(tab-line-tab                           ((t (:inherit 'tab-bar-tab))))
+   `(tab-line-tab-current                   ((t (:inherit 'tab-bar-tab))))
+   `(tab-line-tab-inactive                  ((t (:inherit 'tab-bar-tab-inactive))))
+   `(tab-line-highlight                     ((t (:inherit 'tab-line-tab-current))))
+   `(tab-line-tab-modified                  ((t (:weight bold))))
 ))
 
 ;;;###autoload
