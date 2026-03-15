@@ -64,6 +64,10 @@
       ("catgirl-purple-dull"            . "#b19cd9")
       ("catgirl-blue"                   . "#005faf")
       ("catgirl-teal"                   . "#179299")
+
+      ;; secondary for dark backgrounds
+      ("catgirl-dark-teal"              . "#00d4ff")
+      ("catgirl-dark-red"               . "#fe8383")
     )
     "The main palette"
 ))
@@ -172,7 +176,18 @@
    `(doom-modeline-project-dir              ((t (:foreground ,catgirl-purple-dull :weight bold))))
    `(doom-modeline-buffer-file              ((t (:foreground ,catgirl-pink-light))))
    `(doom-modeline-buffer-major-mode        ((t (:foreground ,catgirl-pink-light))))
-   `(doom-modeline-info                     ((t (:foreground ,catgirl-pink-light))))
+   ;; Not happy about this, but doom-modeline-info is used for the success status, so this is necessary
+   ;; for LSP diagnostics to
+   `(doom-modeline-info                     ((t (:foreground ,catgirl-dark-teal :weight bold))))
+   `(doom-modeline-success                  ((t (:foreground ,catgirl-positive :weight bold))))
+   ;; 4.2 contrast; not great, but it isn't critical info either, so it works. The bold should help compensate
+   `(doom-modeline-warning                  ((t (:foreground ,catgirl-orange :weight bold))))
+   `(doom-modeline-error                    ((t (:foreground ,catgirl-dark-red :weight bold))))
+
+   ;; flymake
+   `(flymake-info                           ((t (:underline (:style wave :color ,catgirl-teal)))))
+   `(flymake-warning                        ((t (:underline (:style wave :color ,catgirl-orange)))))
+   `(flymake-error                          ((t (:underline (:style wave :color ,catgirl-red)))))
 
    ;; hl-line
    `(hl-line-face                           ((t (:background ,catgirl-grey)) (t :weight bold)))
