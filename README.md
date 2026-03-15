@@ -12,8 +12,8 @@ This is largely a colourscheme, and does not provide font defaults. It does chan
 
 With `use-package` and emacs 30+:
 ```elisp
-(use-package catgirl
-  :vc (:url "ssh://git@codeberg.org/LunarWatcher/catgirl.el.git"
+(use-package catgirl-theme
+  :vc (:url "https://codeberg.org/LunarWatcher/catgirl.el.git"
             :rev :newest)
   :config
   (load-theme 'catgirl :no-confirm)

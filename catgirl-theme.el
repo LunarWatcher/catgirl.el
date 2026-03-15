@@ -136,9 +136,25 @@
    ;; `(diff-file-header                        ((,class (:background ,catgirl-white :foreground ,catgirl-purple :bold t)) (t (:background ,catgirl-purple :foreground ,catgirl-white :bold t))))
 
    ;; mode-line
-   `(mode-line                              ((t (:background ,catgirl-grey-dark :foreground ,catgirl-abswhite ))))
+   `(mode-line                              ((t (
+                                                :background ,catgirl-grey-dark
+                                                :foreground ,catgirl-abswhite
+                                                :box (
+                                                    :line-width 2
+                                                    :color ,catgirl-grey-dark
+                                                    :style nil
+                                                )
+                                            ))))
    `(mode-line-buffer-id                    ((t (:foreground ,catgirl-teal))))
-   `(mode-line-inactive                     ((t (:inherit 'mode-line :background ,catgirl-comment-grey))))
+   `(mode-line-inactive                     ((t (
+                                                :inherit 'mode-line
+                                                :background ,catgirl-comment-grey
+                                                :box (
+                                                    :line-width 2
+                                                    :color ,catgirl-comment-grey
+                                                    :style nil
+                                                )
+                                            ))))
 
    ;; doom-modeline
    `(doom-modeline-buffer-path              ((t (:foreground ,catgirl-pink-light))))
@@ -160,7 +176,7 @@
    ;; isearch
    `(isearch                                ((t (:foreground ,catgirl-purple-dull :weight bold :background ,catgirl-abswhite))))
    `(isearch-fail                           ((t (:foreground ,catgirl-red :background ,catgirl-white))))
-   `(lazy-highlight                         ((t (:foreground ,catgirl-attention :weight bold :background ,catgirl-black))))
+   `(lazy-highlight                         ((t (:foreground ,catgirl-black :weight bold :background ,catgirl-attention))))
 
    ;; line-number
    `(line-number                            ((t (:inherit fixed-pitch :foreground ,catgirl-grey-dark :background ,catgirl-grey))))
