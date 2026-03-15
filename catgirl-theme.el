@@ -228,7 +228,7 @@
    `(neo-expand-btn-face                    ((t (:foreground ,catgirl-purple))))
 
    ;; git gitter
-   `(git-gutter:modified                    ((t (:foreground ,catgirl-attention))))
+   `(git-gutter:modified                    ((t (:foreground ,catgirl-orange))))
    `(git-gutter:deleted                     ((t (:foreground ,catgirl-red))))
    `(git-gutter:added                       ((t (:foreground ,catgirl-green))))
    `(git-gutter:seperator                   ((t (:inherit font-lock-comment-face))))
