@@ -49,7 +49,7 @@
       ("catgirl-orange"                 . "#d75f00")
       ("catgirl-red"                    . "#d70000")
       ("catgirl-green"                  . "#008700")
-      ("catgirl-green-light"            . "#5f8700") ;; not sure where I'll use this either
+      ("catgirl-green-light"            . "#5f8700")
       ("catgirl-yellow-highlight"       . "#ffffaf")
       ;; Tint-ish colours meant for diffs
       ("catgirl-negative"               . "#ffd7ff")
