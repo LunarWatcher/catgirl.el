@@ -138,7 +138,7 @@
    ;; mode-line
    `(mode-line                              ((t (:background ,catgirl-grey-dark :foreground ,catgirl-abswhite ))))
    `(mode-line-buffer-id                    ((t (:foreground ,catgirl-teal))))
-   `(mode-line-inactive                     ((t (:inherit 'mode-line :background ,catgirl-grey))))
+   `(mode-line-inactive                     ((t (:inherit 'mode-line :background ,catgirl-comment-grey))))
 
    ;; doom-modeline
    `(doom-modeline-buffer-path              ((t (:foreground ,catgirl-pink-light))))
