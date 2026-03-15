@@ -194,7 +194,7 @@
    `(markdown-inline-code-face              ((t (:inherit 'fixed-pitch :foreground ,catgirl-green-light :background ,catgirl-grey))))
    `(markdown-code-face                     ((t (:inherit 'fixed-pitch :foreground ,catgirl-green-light :background ,catgirl-grey :extend t))))
    `(markdown-link-url                      ((t (:inherit 'link))))
-   `(markdown-header-face-1                 ((t (:inherit 'markdown-header-face :slant italic :foreground ,catgirl-pink :height 2.0))))
+   `(markdown-header-face-1                 ((t (:inherit 'markdown-header-face :foreground ,catgirl-pink :height 2.0))))
    `(markdown-header-face-2                 ((t (:inherit 'markdown-header-face :foreground ,catgirl-purple :height 1.7))))
    `(markdown-header-face-3                 ((t (:inherit 'markdown-header-face :foreground ,catgirl-orange :height 1.5))))
    `(markdown-header-face-4                 ((t (:inherit 'markdown-header-face :foreground ,catgirl-teal :height 1.3))))
