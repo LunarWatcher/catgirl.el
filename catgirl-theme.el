@@ -158,9 +158,9 @@
    `(ido-indicator                          ((t (:foreground ,catgirl-teal :background ,catgirl-purple))))
 
    ;; isearch
-   `(isearch                                ((t (:foreground ,catgirl-purple :weight bold :background ,catgirl-pink))))
+   `(isearch                                ((t (:foreground ,catgirl-purple-dull :weight bold :background ,catgirl-abswhite))))
    `(isearch-fail                           ((t (:foreground ,catgirl-red :background ,catgirl-white))))
-   `(lazy-highlight                         ((t (:foreground ,catgirl-purple :weight bold :background ,catgirl-red))))
+   `(lazy-highlight                         ((t (:foreground ,catgirl-attention :weight bold :background ,catgirl-black))))
 
    ;; line-number
    `(line-number                            ((t (:inherit fixed-pitch :foreground ,catgirl-grey-dark :background ,catgirl-grey))))
@@ -196,10 +196,15 @@
 
   ;; tabline and tabbar
   `(tab-bar                                 ((t (
-                                                 :foreground ,catgirl-black
-                                                 :background ,catgirl-white
-                                                 :height 0.9
-                                                 :box (:line-width 4 :color ,catgirl-white :style nil)
+                                                 :foreground ,catgirl-abswhite
+                                                 :distant-foreground ,catgirl-abswhite
+                                                 :background ,catgirl-grey-dark
+                                                 :height 1.0
+                                                 ;; :box (
+                                                 ;;       :line-width 4
+                                                 ;;       :color ,catgirl-grey-dark
+                                                 ;;       :style nil
+                                                 ;; )
                                             ))))
   `(tab-bar-tab                             ((t (
                                                  :inherit 'tab-bar
@@ -214,10 +219,10 @@
   `(tab-bar-tab-inactive                    ((t (
                                                  :inherit 'tab-bar
                                                  :foreground ,catgirl-abswhite
-                                                 :background ,catgirl-purple
+                                                 :background ,catgirl-purple-dull
                                                  :box (
                                                        :line-width 4
-                                                       :color ,catgirl-purple
+                                                       :color ,catgirl-purple-dull
                                                        :style nil
                                                  )
                                             ))))
@@ -225,6 +230,8 @@
   `(tab-line-tab                            ((t (:inherit 'tab-bar-tab))))
   `(tab-line-tab-current                    ((t (:inherit 'tab-bar-tab))))
   `(tab-line-tab-inactive                   ((t (:inherit 'tab-bar-tab-inactive))))
+  `(tab-line-highlight                      ((t (:inherit 'tab-line-tab-current))))
+  `(tab-line-tab-modified                   ((t (:weight bold))))
 ))
 
 ;;;###autoload
