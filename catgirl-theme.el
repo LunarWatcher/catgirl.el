@@ -156,6 +156,12 @@
                                                 )
                                             ))))
 
+   ;; evil search
+   `(evil-search-highlight-persist-highlight-face    ((t (:inherit lazy-highlight))))
+   `(evil-ex-lazy-highlight                          ((t (:inherit lazy-highlight))))
+   `(evil-ex-substitute-matches                      ((t (:foreground ,catgirl-red :strike-through t))))
+   `(evil-ex-substitute-replacement                  ((t (:foreground ,catgirl-green :underline t))))
+
    ;; doom-modeline
    `(doom-modeline-buffer-path              ((t (:foreground ,catgirl-pink-light))))
    `(doom-modeline-project-dir              ((t (:foreground ,catgirl-purple-dull :weight bold))))
