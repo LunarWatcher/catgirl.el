@@ -125,6 +125,11 @@
    `(trailing-whitespace                    ((t (:background ,catgirl-red))))
    `(vertical-border                        ((t (:foreground ,catgirl-grey))))
 
+   ;; show-paren
+   `(show-paren-match                       ((t (:foreground ,catgirl-abswhite :background ,catgirl-pink-light))))
+   `(show-paren-match-expression            ((t (:inherit 'show-paren-match))))
+   `(show-paren-mismatch                    ((t (:background ,catgirl-orange :foreground ,catgirl-white))))
+
    ;; diff
    `(diff-added                             ((t (:background ,catgirl-positive :foreground ,catgirl-black))))
    `(diff-removed                           ((t (:background ,catgirl-negative :foreground ,catgirl-black))))
