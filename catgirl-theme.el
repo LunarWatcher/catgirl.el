@@ -112,7 +112,8 @@
    '(button                                 ((t (:inherit link))))
    `(cursor                                 ((t (:background ,catgirl-purple-light :foreground ,catgirl-black))))
    `(escape-glyph                           ((t (:foreground ,catgirl-teal))))
-   `(shadow                                 ((t (:foreground ,catgirl-black))))
+   ;; affects (notably) the minibuffer virtual text completions
+   `(shadow                                 ((t (:foreground ,catgirl-comment-grey))))
    `(file-name-shadow                       ((t (:foreground ,catgirl-black))))
    `(fringe                                 ((t (:foreground ,catgirl-purple :background ,catgirl-white))))
    `(popup-tip-face                         ((t (:foreground ,catgirl-purple :background ,catgirl-pink))))
@@ -123,7 +124,6 @@
    `(error                                  ((t (:foreground ,catgirl-red :weight bold))))
    `(tooltip                                ((t (:foreground ,catgirl-purple :background ,catgirl-white))))
    `(menu                                   ((t (:foreground ,catgirl-purple :background ,catgirl-white))))
-   `(minibuffer-prompt                      ((t (:foreground ,catgirl-purple :background ,catgirl-white))))
    `(region                                 ((t (:background ,catgirl-purple-dull :foreground ,catgirl-abswhite))))
    `(secondary-selection                    ((t (:background ,catgirl-red))))
    `(trailing-whitespace                    ((t (:background ,catgirl-red))))
@@ -166,10 +166,10 @@
                                             ))))
 
    ;; evil search
-   `(evil-search-highlight-persist-highlight-face    ((t (:inherit lazy-highlight))))
-   `(evil-ex-lazy-highlight                          ((t (:inherit lazy-highlight))))
-   `(evil-ex-substitute-matches                      ((t (:foreground ,catgirl-red :strike-through t))))
-   `(evil-ex-substitute-replacement                  ((t (:foreground ,catgirl-green :underline t))))
+   `(evil-search-highlight-persist-highlight-face   ((t (:inherit lazy-highlight))))
+   `(evil-ex-lazy-highlight                         ((t (:inherit lazy-highlight))))
+   `(evil-ex-substitute-matches                     ((t (:foreground ,catgirl-red :strike-through t))))
+   `(evil-ex-substitute-replacement                 ((t (:foreground ,catgirl-green :underline t))))
 
    ;; doom-modeline
    `(doom-modeline-buffer-path              ((t (:foreground ,catgirl-pink-light))))
@@ -189,6 +189,22 @@
    `(flymake-warning                        ((t (:underline (:style wave :color ,catgirl-orange)))))
    `(flymake-error                          ((t (:underline (:style wave :color ,catgirl-red)))))
 
+   ;; corfu
+   `(corfu-default                          ((t (:background ,catgirl-grey))))
+   `(corfu-current                          ((t (:background ,catgirl-purple-dull))))
+   `(corfu-bar                              ((t (:background ,catgirl-black))))
+   `(corfu-border                           ((t (:background ,catgirl-pink-light))))
+   `(corfu-annotations                      ((t (:inherit 'font-lock-comment-face))))
+   `(corfu-deprecated                       ((t (:strike-through t))))
+
+   ;; orderless
+   ;; TODO: there's several places with progressions like this that should be unified. Markdown headers also have a
+   ;; progression chain
+   `(orderless-match-face-0                 ((t (:weight bold :foreground ,catgirl-pink-light))))
+   `(orderless-match-face-1                 ((t (:weight bold :foreground ,catgirl-purple-light))))
+   `(orderless-match-face-2                 ((t (:weight bold :foreground ,catgirl-blue))))
+   `(orderless-match-face-3                 ((t (:weight bold :foreground ,catgirl-orange))))
+
    ;; hl-line
    `(hl-line-face                           ((t (:background ,catgirl-grey)) (t :weight bold)))
    `(hl-line                                ((t (:background ,catgirl-grey)) (t :weight bold)))
@@ -198,6 +214,9 @@
    `(ido-only-match                         ((t (:foreground ,catgirl-purple :background ,catgirl-teal :weight bold))))
    `(ido-subdir                             ((t (:foreground ,catgirl-blue))))
    `(ido-indicator                          ((t (:foreground ,catgirl-teal :background ,catgirl-purple))))
+
+   ;; fill-column
+   `(fill-column-indicator                  ((t (:foreground ,catgirl-pink))))
 
    ;; isearch
    `(isearch                                ((t (:foreground ,catgirl-purple-dull :weight bold :background ,catgirl-abswhite))))
@@ -227,7 +246,10 @@
    `(neo-file-link-face                     ((t (:foreground ,catgirl-black))))
    `(neo-expand-btn-face                    ((t (:foreground ,catgirl-purple))))
 
-   ;; git gitter
+   ;; minibuffer
+   `(minibuffer-prompt                      ((t (:foreground ,catgirl-pink :background ,catgirl-white))))
+
+   ;; git gutter
    `(git-gutter:modified                    ((t (:weight bold :foreground ,catgirl-orange))))
    `(git-gutter:deleted                     ((t (:weight bold :foreground ,catgirl-red))))
    `(git-gutter:added                       ((t (:weight bold :foreground ,catgirl-green))))

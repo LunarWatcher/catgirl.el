@@ -8,6 +8,8 @@ This is largely a colourscheme, and does not provide font defaults. It does chan
 
 ## Screenshots
 
+TBA once the theme stabilises.
+
 ## Installation
 
 With `use-package` and emacs 30+:
