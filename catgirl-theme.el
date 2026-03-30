@@ -164,6 +164,8 @@
                                                     :style nil
                                                 )
                                             ))))
+   ;; web-mode
+   `(web-mode-html-tag-face                         ((t (:foreground ,catgirl-purple))))
 
    ;; evil search
    `(evil-search-highlight-persist-highlight-face   ((t (:inherit lazy-highlight))))
@@ -237,6 +239,20 @@
    `(markdown-header-face-2                 ((t (:inherit 'markdown-header-face :foreground ,catgirl-purple :height 1.7))))
    `(markdown-header-face-3                 ((t (:inherit 'markdown-header-face :foreground ,catgirl-orange :height 1.5))))
    `(markdown-header-face-4                 ((t (:inherit 'markdown-header-face :foreground ,catgirl-teal :height 1.3))))
+
+   ;; org-mode
+   `(org-level-1                            ((t (:foreground ,catgirl-pink :height 1.7))))
+   `(org-level-2                            ((t (:foreground ,catgirl-purple :height 1.4))))
+   `(org-level-3                            ((t (:foreground ,catgirl-orange :height 1.2))))
+   `(org-level-4                            ((t (:foreground ,catgirl-teal :height 1.1))))
+   `(org-level-5                            ((t (:foreground ,catgirl-pink :height 1.0))))
+   `(org-level-6                            ((t (:foreground ,catgirl-purple :height 1.0))))
+   `(org-level-7                            ((t (:foreground ,catgirl-orange :height 1.0))))
+   `(org-level-8                            ((t (:foreground ,catgirl-teal :height 1.0))))
+
+   `(org-done                               ((t (:inherit 'markdown-header-face :foreground ,catgirl-green))))
+   `(org-todo                               ((t (:inherit 'markdown-header-face :foreground ,catgirl-orange))))
+
 
    ;; neotree
    `(neo-banner-face                        ((t (:foreground ,catgirl-teal :weight bold))))
