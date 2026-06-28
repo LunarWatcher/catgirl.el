@@ -262,6 +262,14 @@
    `(neo-file-link-face                     ((t (:foreground ,catgirl-black))))
    `(neo-expand-btn-face                    ((t (:foreground ,catgirl-purple))))
 
+   ;; nyaatree (my fork of neotree)
+   `(nyaatree-banner-face                   ((t (:foreground ,catgirl-teal :weight bold))))
+   `(nyaatree-header-face                   ((t (:foreground ,catgirl-purple))))
+   `(nyaatree-root-dir-face                 ((t (:foreground ,catgirl-teal :weight bold))))
+   `(nyaatree-dir-link-face                 ((t (:foreground ,catgirl-pink))))
+   `(nyaatree-file-link-face                ((t (:foreground ,catgirl-black))))
+   `(nyaatree-expand-btn-face               ((t (:foreground ,catgirl-purple))))
+
    ;; minibuffer
    `(minibuffer-prompt                      ((t (:foreground ,catgirl-pink :background ,catgirl-white))))
 
